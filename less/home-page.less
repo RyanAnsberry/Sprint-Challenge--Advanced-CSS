@@ -3,6 +3,10 @@
 .home {
 
   .intro {
+    .main-header-img {
+      width: 100%;
+      border-radius: 6px;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +62,19 @@
       }
 
       .btn {
+        button {
+          width: 100px;
+          height: 40px;
+          .btn-style (@border-real, @btn-bg-color);
+          border: none;
+          border-radius: 8px;
+          font-size: 2rem;
+          font-family: 'Ubuntu', sans-serif;
+          &:hover {
+            border: 1px solid @btn-bg-color;
+            .btn-style (@btn-bg-color, @border-real);
+          }
+        }
       }
     }
 
