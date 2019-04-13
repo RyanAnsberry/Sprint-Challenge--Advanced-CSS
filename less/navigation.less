@@ -9,11 +9,18 @@
     flex-direction: column;
     h1 {
         font-size: 4rem;
+        @media @phone {
+            font-size: 3.5rem;
+        }
     }
     nav {
-        width: 42.5%;
+        width: 60%;
+        max-width: 370px;
         display:flex;
         justify-content: space-between;
+        @media @phone {
+            width: 75%;
+        }
         a {
             font-family: 'Ubuntu', sans-serif;
             text-decoration: none;
