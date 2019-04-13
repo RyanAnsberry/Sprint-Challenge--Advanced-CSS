@@ -6,6 +6,8 @@
     .main-header-img {
       width: 100%;
       border-radius: 6px;
+      animation-name: fade-in;
+      animation-duration: 10s;
     }
 
     h2 {
@@ -33,19 +35,29 @@
       height: 100%;
     }
     .blast {
-        @media @phone {
-          width: 90%;
-        }
+      animation-name: fade-in;
+      animation-duration: 4s;
+      @media @phone {
+        width: 90%;
+      }
     }
     .sky{
+      animation-name: fade-in;
+      animation-duration: 6s;
       @media @phone {
         display: none;
       }
     }
     .launch{
+      animation-name: fade-in;
+      animation-duration: 8s;
       @media @phone {
         display: none;
       }
+    }
+    @keyframes fade-in{
+      from {opacity: 0;}
+      to {opacity: 1}
     }
   }
 
